@@ -18,7 +18,10 @@ docker-compose exec web python manage.py seed_data
 API Details
 🔹 Create Order
 POST /orders/
-Request Body
+Request 
+
+
+Body
 {
   "store_id": 1,
   "items": [
@@ -27,11 +30,20 @@ Request Body
   ]
 }
 
+
+
+
 Response
+
+
+
 {
   "status": "CONFIRMED",
   "order_id": 5
 }
+
+
+
 
 🔹 List Orders for a Store
 GET /stores/<store_id>/orders/
